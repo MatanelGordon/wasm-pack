@@ -30,6 +30,16 @@ COPY --from=builder /usr/app/dist /usr/share/nginx/html
 
 > NOTE: The Dockerfile above wont work yet it is a fair demonstration of how it should be used.
 
+### Troubleshooting
+
+In case you get an error regarding wasm-opt, put the following in `cargo.toml`:
+
+```toml
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+```
+
+This will remove any usage of `wasm-opt` and will complete build in most cases.
 ### handling CLI
 
 This image comes with bash support out-of-the box.
