@@ -1,4 +1,4 @@
-FROM 15012002/rust-node
+FROM 15012002/rust-node:latest
 LABEL maintainer="Matanel Gordon"
 # install wasm-pack
 RUN curl "https://rustwasm.github.io/wasm-pack/installer/init.sh" -fsS | bash

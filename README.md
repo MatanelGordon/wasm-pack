@@ -6,10 +6,10 @@ A `rust-node` based image installed with wasm-pack for projects
 
 ## Features
 
-- node v18
-- npm v9
+- node v20
+- npm v10
 - built in yarn & pnpm
-- rust 1.69.0
+- rust 1.76.0
 - bash-sh aliasing for better CLI support for Docker Desktop
 
 ## Usage
