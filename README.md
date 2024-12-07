@@ -6,10 +6,10 @@ A `rust-node` based image installed with wasm-pack for projects
 
 ## Features
 
-- node v20
+- node v22
 - npm v10
 - built in yarn & pnpm
-- rust 1.76.0
+- rust 1.83.0
 - bash-sh aliasing for better CLI support for Docker Desktop
 
 ## Usage
@@ -48,3 +48,7 @@ Just click the `CLI` button in your docker desktop or via the command line:
 ```bash
  docker exec -it mycontainer sh
 ```
+
+### Updating the image
+
+- Contact the author to run the CI
