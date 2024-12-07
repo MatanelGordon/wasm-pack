@@ -1,10 +1,9 @@
 name: Docker Image Push Action
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    types: [closed]
 
 jobs:
   build:
@@ -29,4 +28,6 @@ jobs:
         context: .
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: 15012002/wasm-pack:latest
+        tags: |
+          ${{ secrets.DOCKERHUB_USERNAME }}/wasm-pack:${{ github.head_ref || github.ref_name }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/wasm-pack:latest
