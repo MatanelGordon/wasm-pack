@@ -51,4 +51,6 @@ Just click the `CLI` button in your docker desktop or via the command line:
 
 ### Updating the image
 
-- Contact the author to run the CI
+- Set branch to the name of the tag (e.g. "node-22-rust-1.83" )
+- Make a pull request to main
+- Merge it.
